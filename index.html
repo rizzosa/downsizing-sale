@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Sam's downsizing sale — furniture, kitchenware, books, electronics, and more."
+    >
+
+    <title>Sam's Moving Sale</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <nav class="nav">
+            <a class="brand" href="#">
+                SAM'S DOWNSIZING SALE
+            </a>
+
+            <div class="nav-links">
+                <a href="#shop">Shop</a>
+                <a href="#about">About</a>
+            </div>
+        </nav>
+
+        <section class="hero">
+
+            <div class="hero-copy">
+                <p class="eyebrow">
+                    A VERY PROLONGED SALE
+                </p>
+
+                <h1>
+                    Making room<br>
+                    for what comes next.
+                </h1>
+            </div>
+
+            <div class="hero-description">
+                <p>
+                    I'm gradually downsizing before moving out of my apartment next year.
+                    Everything here is looking for a new home. I'm flexible on price, so don't hesitate to make an offer!
+                </p>
+
+                <a href="#shop" class="browse-link">
+                    Browse everything
+                    <span aria-hidden="true">↓</span>
+                </a>
+            </div>
+
+        </section>
+
+    </header>
+
+
+    <main>
+
+        <section id="shop" class="shop">
+
+            <div class="shop-header">
+
+                <div
+                    id="category-filters"
+                    class="category-filters"
+                    aria-label="Filter by category"
+                >
+                    <button
+                        class="category-button active"
+                        data-category="all"
+                    >
+                        All
+                    </button>
+                </div>
+
+                <div class="shop-tools">
+
+                    <label class="search-wrapper">
+                        <span class="sr-only">
+                            Search items
+                        </span>
+
+                        <input
+                            id="search"
+                            type="search"
+                            placeholder="Search"
+                            autocomplete="off"
+                        >
+
+                        <span class="search-icon" aria-hidden="true">
+                            ⌕
+                        </span>
+                    </label>
+
+                    <p id="item-count" class="item-count"></p>
+
+                </div>
+
+            </div>
+
+
+            <div id="items" class="item-grid"></div>
+
+
+            <div
+                id="empty-state"
+                class="empty-state"
+                hidden
+            >
+                <p>No items match that search.</p>
+                <button id="reset-filters">
+                    View everything
+                </button>
+            </div>
+
+        </section>
+
+
+        <section id="about" class="about">
+
+            <p class="eyebrow">
+                ABOUT THE SALE
+            </p>
+
+            <div class="about-grid">
+
+                <h2>
+                    Less stuff.<br>
+                    More space.
+                </h2>
+
+                <div class="about-copy">
+                    <p>
+                        I'm slowly consolidating my belongings before
+                        moving, so this page will change over time.
+                        I'll add things as I'm ready to part with them.
+                    </p>
+
+                    <p>
+                        If something is listed as available, it's still
+                        up for grabs. Pickup details and payment can be arranged
+                        after you get in touch!
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Sam's Downsizing Sale</p>
+        <p>Updated as things find new homes.</p>
+    </footer>
+
+
+    <dialog id="product-dialog" class="product-dialog">
+
+        <button
+            id="close-dialog"
+            class="dialog-close"
+            aria-label="Close"
+        >
+            ×
+        </button>
+
+        <div id="dialog-content"></div>
+
+    </dialog>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+- id: lamp
+  name: Standing Lamp
+  price: 20
+  retail_price: 80
+  category: Furniture
+  condition: Great
+  status: available
+  description: >
+    Simple standing lamp. Works well, but I'm happy to give this 
+    one away to somebody who can use it.
+  images:
+    - images/standing_lamp.jpg
