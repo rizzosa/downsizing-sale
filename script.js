@@ -236,7 +236,7 @@ function openProductDialog(item) {
             ? `
                 <a
                     class="interest-button"
-                    href="mailto:samrizzo24@gmail.com?subject=${encodeURIComponent(
+                    href="mailto:sam.downsizing@gmail.com?subject=${encodeURIComponent(
                         `Interested in ${item.name}`
                     )}"
                 >
